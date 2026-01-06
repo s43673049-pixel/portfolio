@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
 <!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -123,116 +126,190 @@
         </section>
 
         <!-- project -->
-        <section id="projects" class="projects py-20 bg-white">
-        <div class="container">
-        <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
-            <div class=" project-grid grid  row g-4">
-             
+        <section id="projects" class="py-20 bg-white">
+            <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+            
+            <div class="row g-4">
+                
+                <!-- Blog post -->
+                <div class="col-md-4">
+                     <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                         <h3 class="text-xl font-semibold mb-2">Blog Post</h3>
+                         <p class="text-gray-600 mb-4">Create, edit, and publish blog posts with a clean UI.</p>
+                         <p class="text-sm text-gray-500 mb-4">HTML • CSS • JavaScript</p>
+                     <div class="flex gap-3">
+                        <button class="btn btn-primary">View Project</button>
+                         <button class="btn btn-outline-dark">GitHub</button>
+                     </div>
+                    </div>
+                </div>
+
+                <!-- Product Landing Page -->
                 <div class="col-md-4">
                 <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                <!-- img -->
-                <img src="survey_.jpeg"
-                alt="Project Image"
-                class="project-image"
-                width="200" height="150">
-                <h3 class="text-xl font-semibold mb-2">Survey Form</h3>
-                <p class="text-gray-600 mb-4">A survey form to collect user feedback and opinions on various topics.</p>
-                <!-- buttons -->
+                <h3 class="text-xl font-semibold mb-2">Product Landing Page</h3>
+                <p class="text-gray-600 mb-4">A product landing page to showcase a specific product or service.</p>
                 <div class="flex gap-3">
-                
-                <a 
-                class="btn btn-primary"
-                href="#"
-                target="_blank">
-                View Project
-                </a>
-                <a class="btn btn-outline-dark">GitHub</a>
-                </div>
-
+                <a class="btn btn-primary" href="#" target="_blank">View Project</a>
+                <a class="btn btn-outline-dark" href="#">GitHub</a>
                 </div>
                 </div>
-            
-
-            <div class="col-md-4">
-               
-                <a href="#"  traget="_blank" class="project">
-                <img src="blog post.jpeg" alt="Project Image" class="project-image"  width="200" height="150">
-
-                 <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                <h3 class="text-xl font-semibold mb-2">Blog Post</h3>
-                <p class="text-gray-600 mb-4">A blog post about a specific topic or event.</p>
-                <div class="flex gap-3">
-                   <button class="btn btn-primary">View Project</button>
-                   <button class="btn btn-outline-dark">GitHub</button>
                 </div>
-                </div>
-            </div>    
 
 
-                </a>
+                <!-- To-Do App -->
                 <div class="col-md-4">
-                    <a href="#" target="_blank" class="project">
-                        <img src="product landing.jpeg" alt="Project Image" class="project-image" width="200" height="150">
-                        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                            <h3 class="text-xl font-semibold mb-2">Product Landing Page</h3>
-                            <p class="text-gray-600 mb-4">A product landing page to showcase a specific product or service.</p>
-                            <div class="flex gap-3">
-                                <button class="btn btn-primary">View Project</button>
-                                <button class="btn btn-outline-dark">GitHub</button>
-                            </div>
-                        </div>
-                    </a>
-                </div>                
+                <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+                <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
+                <p class="text-gray-600 mb-4">LocalStorage based app</p>
+                <div class="flex gap-3">
+                <a class="btn btn-primary" href="#" target="_blank">Live</a>
+                <a class="btn btn-outline-dark" href="#">GitHub</a>
+                </div>
+                </div>
+                </div>
+                
+                 <!-- Notes App -->
+      <div class="col-md-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Notes App</h3>
+          <p class="text-gray-600 mb-4">
+            Add, edit, and delete notes with persistent storage.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">JavaScript • LocalStorage</p>
+          <div class="flex gap-3">
+            <button class="btn btn-primary">Live</button>
+            <button class="btn btn-outline-dark">GitHub</button>
+          </div>
+        </div>
+      </div>
+     
+        <!-- Expense Tracker -->
+            <div class="col-md-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
+          <p class="text-gray-600 mb-4">
+            Track income and expenses with totals and categories.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">JavaScript • LocalStorage</p>
+          <div class="flex gap-3">
+            <button class="btn btn-primary">Live</button>
+            <button class="btn btn-outline-dark">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+       
+                <!-- Weather App -->
                 <div class="col-md-4">
                     <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                        <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
-                        <p class="text-gray-600 mb-4">LocalStorage based app</p>
+                        <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+                        <p class="text-gray-600 mb-4">A weather application using API integration to fetch real-time weather data.</p>
+                        <p class="text-sm text-gray-500 mb-4">API • JavaScript</p>
                         <div class="flex gap-3">
                             <button class="btn btn-primary">Live</button>
                             <button class="btn btn-outline-dark">GitHub</button>
                         </div>
                     </div>
                 </div>
-            </div>
-            </section>
 
-        <section id="Education_and_Experience">
-            <div>
-                <h2>Work Expreience</h2>
-            <p>This section contains information about us.</p>
-             <a href=""  id="LinkedIn">Visit my Profile</a>
-            </div>
-            <div>
-                <h2>OpenSource Work</h2>
-                <p>made my own projects with 200 github stars</p>
-                <a href="" id="GitHub" >Visit my GitHub Profile</a>
-            </div>
-            <div>
-                <h2>Education</h2>
-                <p>Graduated with 8.89 out of 10 CGPA. Won Acme hackathon.Organized 30 sessions</p>
-                 <span>Courses I took:</span>
-                <ul>
-                    <li>Web Development</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Machine Learning</li>
-                </ul>
-            </div>
-        </section>
+       <!-- Movie Search app -->
+                <div class="col-md-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Movie Search App</h3>
+          <p class="text-gray-600 mb-4">
+            Search movies using an external API with dynamic results.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">API • JavaScript</p>
+          <div class="flex gap-3">
+            <button class="btn btn-primary">Live</button>
+            <button class="btn btn-outline-dark">GitHub</button>
+          </div>
+        </div>
+      </div>
 
+                <!-- E-commerce App -->
+      <div class="col-md-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">E-commerce App</h3>
+          <p class="text-gray-600 mb-4">
+            Product listing, cart system, and checkout UI.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">HTML • CSS • JavaScript</p>
+          <div class="flex gap-3">
+            <button class="btn btn-primary">Live</button>
+            <button class="btn btn-outline-dark">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Job Search Dashboard -->
+      <div class="col-md-4">
+        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-2">Job Search Dashboard</h3>
+          <p class="text-gray-600 mb-4">
+            Browse jobs, filter roles, and track applications.
+          </p>
+          <p class="text-sm text-gray-500 mb-4">API • Dashboard UI</p>
+          <div class="flex gap-3">
+            <button class="btn btn-primary">Live</button>
+            <button class="btn btn-outline-dark">GitHub</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+</section>
+
+       <!-- contact -->
         <section id="contact" class="py-20 bg-gray-900 text-white">
-            <div class="container text-center">
-            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
-            <p class="mb-6">Feel free to reach out through this section.</p>
-            <div class="flex gap-4 justify-content-center">
-                <button class="btn btn-light"><img src="email logo.png" alt="Email" width="40"></button>
-                <button class="btn btn-light"><img src="git logo.png" alt="GitHub" width="40"></button>
-                <button class="btn btn-light"><img src="linkedin logo.png" alt="LinkedIn" width="40"></button>
-            </div>
-            </div>
-        </section>
+  <div class="container text-center">
+    <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+
+      <!-- Email -->
+      <a
+        href="mailto:s43673049@gmail.com"
+        class="px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-700 transition"
+      >
+        Email
+      </a>
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/s43673049-pixel"
+        target="_blank"
+        class="px-6 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition"
+      >
+        GitHub
+      </a>
+
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/sneha-kulhari"
+        target="_blank"
+        class="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+      >
+        LinkedIn
+      </a>
+
+      <!-- Resume -->
+      <a
+        href="resume.pdf"
+        class="px-6 py-3 border border-black rounded-lg  text-black hover:bg-blue-500 hover:text-white transition"
+      >
+        Download Resume
+      </a>
+
+    </div>
+  </div>
+</section>
+
     </main>
+
     <footer class="py-4 bg-black text-center text-white">
-        <p>&copy; 2023 My Website</p>
+        <p>© 2025 Sneha. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
