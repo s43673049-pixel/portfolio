@@ -1,306 +1,382 @@
-<!doctype html>
-<html lang="en>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Frontend Developer</title>
+<meta name="description" content="Frontend developer building fast, clean interfaces — SaaS dashboards, ecommerce, and admin tooling. Available for freelance and full-time work.">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body>
 
-    <!--Navbar-->
-<div class="navbar">
-    <!-- Logo -->
-    <img src="images/name logo .jpg" alt="logo" class="logo" />
-    <!-- Nav Links -->
-     <nav>     
-        <ul>
-           <li><a href="#home">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#skills">Skills</a></li>
-           <li><a href="#projects">Projects</a></li>
-           <li><a href="#contact">Contact</a></li>
-        </ul>
-     </nav>
-</div>
+<!-- progress rail -->
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
 
-    <main>
-        <section id="home" class="hero min-h-screen flex items-center justify-center pt-20">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start">
-                        <h1 class="text-5xl font-bold mb-4">
-                            Hi, I'm <span class="text-blue-600">Sneha</span>
-                        </h1>
-                        <p class="text-xl mb-6">Frontend Developer</p>
+<!-- ============ NAV ============ -->
+<header class="masthead" id="masthead">
+  <div class="masthead-inner">
+    <a href="#top" class="masthead-mark">AR<span class="masthead-mark-dot">.</span></a>
+    <nav class="masthead-nav" aria-label="Primary">
+      <a href="#work"><span class="nav-index">01</span> Work</a>
+      <a href="#about"><span class="nav-index">02</span> About</a>
+      <a href="#contact"><span class="nav-index">03</span> Contact</a>
+    </nav>
+    <a href="#contact" class="masthead-cta">Let's talk →</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#work">01 — Work</a>
+    <a href="#about">02 — About</a>
+    <a href="#contact">03 — Contact</a>
+  </nav>
+</header>
 
-                        <div class="flex gap-4 justify-center justify-md-start">
-                            <button class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-                                Download Resume
-                            </button>
-                            <button class="px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition">
-                                Contact Me
-                            </button>
-                        </div>
-                    </div>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal">Issue No. 04 — Frontend Engineer, based in Punjab, India, working worldwide</p>
 
-                    <div class="col-md-6 text-center mt-5 mt-md-0">
-                        <img src="images/img3.webp" class="rounded-full mx-auto shadow-lg" />
-                    </div>
+    <h1 class="hero-headline reveal">
+      I build interfaces<br>
+      that make <em>data</em><br>
+      feel <em>obvious.</em>
+    </h1>
 
-                </div>
+    <p class="hero-sub reveal">
+      Four years turning dense dashboards, storefronts, and admin
+      tools into products people actually enjoy using. Currently taking
+      on select freelance work and full-time conversations.
+    </p>
+
+    <div class="hero-actions reveal">
+      <a href="#work" class="btn btn-primary">View the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="hero-index reveal" aria-label="Featured projects index">
+    <p class="hero-index-label">On this page</p>
+    <a href="#project-01" class="hero-index-row">
+      <span class="hero-index-num">01</span>
+      <span class="hero-index-name">Meridian — SaaS Dashboard</span>
+      <span class="hero-index-tag">Product analytics</span>
+    </a>
+    <a href="#project-02" class="hero-index-row">
+      <span class="hero-index-num">02</span>
+      <span class="hero-index-name">Fielding — Commerce Frontend</span>
+      <span class="hero-index-tag">D2C retail</span>
+    </a>
+    <a href="#project-03" class="hero-index-row">
+      <span class="hero-index-num">03</span>
+      <span class="hero-index-name">Portside — Admin Panel</span>
+      <span class="hero-index-tag">Internal tooling</span>
+    </a>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+
+  <div class="section-head">
+    <p class="eyebrow reveal">Selected work</p>
+    <h2 class="section-title reveal">Three problems worth<br>solving properly.</h2>
+    <p class="section-note reveal">
+      Each of these shipped to real users. Metrics below are what
+      changed after launch, not projections.
+    </p>
+  </div>
+
+  <!-- PROJECT 01 -->
+  <article class="project" id="project-01">
+    <div class="project-copy">
+      <p class="project-eyebrow reveal">Case study — 01 · SaaS Dashboard</p>
+      <h3 class="project-title reveal">Meridian</h3>
+      <p class="project-tagline reveal">Turning a spreadsheet-shaped product into something a team could actually read in a morning stand-up.</p>
+
+      <p class="project-body reveal">
+        Meridian's analytics suite had grown organically for three years —
+        every new metric got bolted onto an already-crowded table. My job
+        was to rebuild the dashboard layer: a component system flexible
+        enough for a hundred metric types, but opinionated enough that no
+        two screens looked like they'd been designed by different teams.
+      </p>
+      <p class="project-body reveal">
+        I built a composable widget grid, a chart library wrapper on top of
+        D3 with consistent motion and empty states, and a virtualized
+        table that stayed smooth past 50,000 rows on mid-range laptops.
+      </p>
+
+      <ul class="project-tags reveal">
+        <li>React</li><li>TypeScript</li><li>D3.js</li><li>Zustand</li><li>Vite</li>
+      </ul>
+
+      <div class="project-metrics reveal">
+        <div class="metric"><span class="metric-value">−61%</span><span class="metric-label">dashboard load time</span></div>
+        <div class="metric"><span class="metric-value">50k+</span><span class="metric-label">rows rendered smoothly</span></div>
+        <div class="metric"><span class="metric-value">96</span><span class="metric-label">Lighthouse performance</span></div>
+      </div>
+
+      <div class="project-links reveal">
+        <a href="#" class="text-link">Live demo <span>↗</span></a>
+        <a href="#" class="text-link">View code <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="project-frame reveal">
+      <div class="browser-window">
+        <div class="browser-chrome">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="browser-url">meridian.app/dashboard/overview</span>
+        </div>
+        <div class="browser-body browser-body-dashboard">
+          <div class="mock-sidebar">
+            <div class="mock-sidebar-logo"></div>
+            <div class="mock-sidebar-row w-70"></div>
+            <div class="mock-sidebar-row w-50 active"></div>
+            <div class="mock-sidebar-row w-60"></div>
+            <div class="mock-sidebar-row w-40"></div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-kpis">
+              <div class="mock-kpi"><span class="mock-kpi-dot up"></span><div class="mock-kpi-bar w-80"></div></div>
+              <div class="mock-kpi"><span class="mock-kpi-dot up"></span><div class="mock-kpi-bar w-60"></div></div>
+              <div class="mock-kpi"><span class="mock-kpi-dot down"></span><div class="mock-kpi-bar w-70"></div></div>
             </div>
-        </section>
-
-        <section id="about" class="py-20 bg-white">
-            <div class="container text-center">
-               <h2 class="text-4xl font-bold mb-6">About Me</h2>
-                 <ul class="max-w-3xl mx-auto text-gray-600">
-                   <li>⚡Strong foundation in HTML5, CSS3 and Javascript.</li>
-                   <li>⚡Experience building responsive Layouts, UI components.</li>
-                   <li>⚡Hand-on Project Experience with Real World Applications.</li>
-                   <li>⚡Familiar with Git, Github and modern frameworks like React.</li>
-                  <li>⚡Quick learner with strong problem-solving skills.</li>
-                 </ul>
+            <div class="mock-chart">
+              <svg viewBox="0 0 300 90" preserveAspectRatio="none" class="mock-chart-svg">
+                <polyline points="0,70 30,55 60,60 90,35 120,45 150,20 180,30 210,15 240,25 270,10 300,18" />
+              </svg>
             </div>
-        </section>
-
-
-        <section id="skills" class="skills py-20 bg-gray-100">
-            <h2 class="text-4xl font-bold mb-10 text-center">Skills</h2>
-
-               <div class="row g-4">
-                 <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                     <img src="images/img4.1.jpg" alt="html logo">
-                   </div>
-                 </div>
-
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                   <img src="images/img5.jpg" alt="css logo">
-                   </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                   <img src="images/img6.jpg" alt="javascript logo">
-                   </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card hover:scale-105 transition">
-                   <img src="images/img7.jpg" alt="React logo">
-                   </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                   <img src="images/img8.webp" alt="bootstrap logo">
-                   </div>
-                </div>
-               
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                   <img src="images/img9.jpg" alt="tailwindcss logo">
-                   </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                   <div class="skill-card shadow hover:scale-105 transition">
-                   <img src="images/img11.webp" alt="git github logo">
-                   </div>
-                </div>
+            <div class="mock-table">
+              <div class="mock-table-row head"></div>
+              <div class="mock-table-row"></div>
+              <div class="mock-table-row"></div>
+              <div class="mock-table-row"></div>
             </div>
-        
-        </section>
-
-        <!-- project -->
-        <section id="projects" class="py-20 bg-white">
-            <div class="container">
-            <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
-            
-            <div class="row g-4">
-                
-                <!-- Blog post -->
-                <div class="col-md-4">
-                     <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                         <h3 class="text-xl font-semibold mb-2">Blog Post</h3>
-                         <p class="text-gray-600 mb-4">Create, edit, and publish blog posts with a clean UI.</p>
-                         <p class="text-sm text-gray-500 mb-4">HTML • CSS • JavaScript</p>
-                     <div class="flex gap-3">
-                        <a class="btn btn-primary" href="https://s43673049-pixel.github.io/blog-post-app"  target="_blank"> View Project</a>
-                         <a class="btn btn-outline-dark" href="https://github.com/s43673049-pixel/blog-post-app" target="_blank">GitHub</a>
-                     </div>
-                    </div>
-                </div>
-
-                <!-- Product Landing Page -->
-                <div class="col-md-4">
-                     <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                       <h3 class="text-xl font-semibold mb-2">Product Landing Page</h3>
-                       <p class="text-gray-600 mb-4">A product landing page to showcase a specific product or service.</p>
-                     <div class="flex gap-3">
-                       <a class="btn btn-primary" href="#" target="_blank">View Project</a>
-                      <a class="btn btn-outline-dark" href="#">GitHub</a>
-                     </div>
-                    </div>
-                </div>
-
-
-                <!-- To-Do App -->
-                <div class="col-md-4">
-                     <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                       <h3 class="text-xl font-semibold mb-2">To-Do App</h3>
-                       <p class="text-gray-600 mb-4">LocalStorage based app</p>
-                     <div class="flex gap-3">
-                       <a class="btn btn-primary" href="https://s43673049-pixel.github.io/to-do-app/" target="_blank">View Project</a>
-                      <a class="btn btn-outline-dark" href="https://github.com/s43673049-pixel/to-do-app">GitHub</a>
-                     </div>
-                   </div>
-                </div>
-                
-                 <!-- Notes App -->
-             <div class="col-md-4">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Notes App</h3>
-          <p class="text-gray-600 mb-4">
-            Add, edit, and delete notes with persistent storage.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">JavaScript • LocalStorage</p>
-          <div class="flex gap-3">
-            <a class="btn btn-primary">View Project</a>
-            <a class="btn btn-outline-dark">GitHub</a>
-          </div>
-        </div>
-      </div>
-     
-        <!-- Expense Tracker -->
-            <div class="col-md-4">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
-          <p class="text-gray-600 mb-4">
-            Track income and expenses with totals and categories.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">JavaScript • LocalStorage</p>
-          <div class="flex gap-3">
-            <a class="btn btn-primary">View Project</a>
-            <a class="btn btn-outline-dark">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-       
-                <!-- Weather App -->
-                <div class="col-md-4">
-                    <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-                        <h3 class="text-xl font-semibold mb-2">Weather App</h3>
-                        <p class="text-gray-600 mb-4">A weather application using API integration to fetch real-time weather data.</p>
-                        <p class="text-sm text-gray-500 mb-4">API • JavaScript</p>
-                        <div class="flex gap-3">
-                            <a class="btn btn-primary">View Project</a>
-                            <a class="btn btn-outline-dark">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-       <!-- Movie Search app -->
-                <div class="col-md-4">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Movie Search App</h3>
-          <p class="text-gray-600 mb-4">
-            Search movies using an external API with dynamic results.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">API • JavaScript</p>
-          <div class="flex gap-3">
-            <a href="https://s43673049-pixel.github.io/movie-search-app/" class="btn btn-primary">View Project</a>
-            <a href="https://github.com/s43673049-pixel/movie-search-app" class="btn btn-outline-dark">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-                <!-- E-commerce App -->
-      <div class="col-md-4">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">E-commerce App</h3>
-          <p class="text-gray-600 mb-4">
-            Product listing, cart system, and checkout UI.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">HTML • CSS • JavaScript</p>
-          <div class="flex gap-3">
-            <a class="btn btn-primary">View Project</a>
-            <a class="btn btn-outline-dark">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-       <!-- Job Search Dashboard -->
-      <div class="col-md-4">
-        <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-xl transition">
-          <h3 class="text-xl font-semibold mb-2">Job Search Dashboard</h3>
-          <p class="text-gray-600 mb-4">
-            Browse jobs, filter roles, and track applications.
-          </p>
-          <p class="text-sm text-gray-500 mb-4">API • Dashboard UI</p>
-          <div class="flex gap-3">
-            <a class="btn btn-primary">View Project</a>
-            <a class="btn btn-outline-dark">GitHub</a>
           </div>
         </div>
       </div>
     </div>
- </div>
+  </article>
+
+  <!-- PROJECT 02 -->
+  <article class="project project-reverse" id="project-02">
+    <div class="project-copy">
+      <p class="project-eyebrow reveal">Case study — 02 · Commerce Frontend</p>
+      <h3 class="project-title reveal">Fielding</h3>
+      <p class="project-tagline reveal">A D2C outdoor-gear brand whose checkout was quietly losing them a third of their traffic.</p>
+
+      <p class="project-body reveal">
+        Fielding came to me with a fast, pretty homepage and a checkout
+        flow that fell apart on mobile. I rebuilt the storefront front end
+        from product listing to payment confirmation, focused on
+        perceived speed — optimistic UI on add-to-cart, skeleton states
+        instead of spinners, and a checkout that never made the customer
+        wait for a network round trip to feel progress.
+      </p>
+      <p class="project-body reveal">
+        Images were the biggest lever: adaptive formats, lazy loading tuned
+        to scroll velocity, and a custom zoom component that didn't tank
+        Core Web Vitals.
+      </p>
+
+      <ul class="project-tags reveal">
+        <li>Next.js</li><li>Tailwind CSS</li><li>Stripe</li><li>Shopify API</li><li>Framer Motion</li>
+      </ul>
+
+      <div class="project-metrics reveal">
+        <div class="metric"><span class="metric-value">+34%</span><span class="metric-label">checkout completion</span></div>
+        <div class="metric"><span class="metric-value">1.2s</span><span class="metric-label">largest contentful paint</span></div>
+        <div class="metric"><span class="metric-value">−28%</span><span class="metric-label">mobile bounce rate</span></div>
+      </div>
+
+      <div class="project-links reveal">
+        <a href="#" class="text-link">Live demo <span>↗</span></a>
+        <a href="#" class="text-link">View code <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="project-frame reveal">
+      <div class="browser-window">
+        <div class="browser-chrome">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="browser-url">fielding.co/checkout</span>
+        </div>
+        <div class="browser-body browser-body-commerce">
+          <div class="mock-product">
+            <div class="mock-product-image"></div>
+            <div class="mock-product-info">
+              <div class="mock-line w-60"></div>
+              <div class="mock-line w-30 accent"></div>
+              <div class="mock-swatches">
+                <span class="swatch s1"></span><span class="swatch s2"></span><span class="swatch s3"></span>
+              </div>
+              <div class="mock-btn">Add to bag</div>
+            </div>
+          </div>
+          <div class="mock-cart">
+            <div class="mock-line w-40"></div>
+            <div class="mock-cart-row"></div>
+            <div class="mock-cart-row"></div>
+            <div class="mock-line w-25 accent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 03 -->
+  <article class="project" id="project-03">
+    <div class="project-copy">
+      <p class="project-eyebrow reveal">Case study — 03 · Admin Panel</p>
+      <h3 class="project-title reveal">Portside</h3>
+      <p class="project-tagline reveal">Internal tooling for a logistics team who'd been running warehouse ops out of a shared spreadsheet.</p>
+
+      <p class="project-body reveal">
+        Portside is the least glamorous project here and probably the one
+        I'm proudest of. No one "wows" over an admin panel, but a
+        warehouse team uses this thing eight hours a day — so every
+        interaction had to be fast, keyboard-friendly, and forgiving of
+        mistakes. Bulk actions, inline editing, undo everywhere, and a
+        permission system that stayed out of people's way until it mattered.
+      </p>
+      <p class="project-body reveal">
+        I built the whole thing around a shared design token system so the
+        client's next three internal tools could be styled from the same
+        base without starting over.
+      </p>
+
+      <ul class="project-tags reveal">
+        <li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>REST + WebSockets</li><li>Storybook</li>
+      </ul>
+
+      <div class="project-metrics reveal">
+        <div class="metric"><span class="metric-value">6.5hrs</span><span class="metric-label">saved per week, per user</span></div>
+        <div class="metric"><span class="metric-value">140+</span><span class="metric-label">daily active operators</span></div>
+        <div class="metric"><span class="metric-value">0</span><span class="metric-label">spreadsheets left in prod</span></div>
+      </div>
+
+      <div class="project-links reveal">
+        <a href="#" class="text-link">Case study <span>↗</span></a>
+        <a href="#" class="text-link">View code <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="project-frame reveal">
+      <div class="browser-window">
+        <div class="browser-chrome">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="browser-url">portside.internal/inventory</span>
+        </div>
+        <div class="browser-body browser-body-admin">
+          <div class="mock-toolbar">
+            <div class="mock-line w-20"></div>
+            <div class="mock-btn small">+ New</div>
+          </div>
+          <div class="mock-grid">
+            <div class="mock-grid-row head"><span></span><span></span><span></span><span></span></div>
+            <div class="mock-grid-row"><span></span><span class="tag ok"></span><span></span><span></span></div>
+            <div class="mock-grid-row"><span></span><span class="tag warn"></span><span></span><span></span></div>
+            <div class="mock-grid-row selected"><span></span><span class="tag ok"></span><span></span><span></span></div>
+            <div class="mock-grid-row"><span></span><span class="tag ok"></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </section>
 
-       <!-- contact -->
-        <section id="contact" class="py-20 bg-gray-900 text-white">
-  <div class="container text-center">
-    <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
-    <div class="flex flex-wrap justify-center gap-4">
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="about-portrait reveal">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder">AR</div>
+      </div>
+      <p class="status-line"><span class="status-dot"></span> Available for freelance work</p>
+    </div>
 
-      <!-- Email -->
-      <a
-        href="mailto:s43673049@gmail.com"
-        class="px-6 py-3 bg-blue-600 rounded-lg text-white hover:bg-blue-700 transition"
-      >
-        Email
-      </a>
+    <div class="about-copy">
+      <p class="eyebrow reveal">About</p>
+      <h2 class="about-lead reveal">
+        I got into this because I liked that a browser refresh could
+        prove me wrong immediately — <em>no waiting, no guessing.</em>
+      </h2>
 
-      <!-- GitHub -->
-      <a
-        href="https://github.com/s43673049-pixel"
-        target="_blank"
-        class="px-6 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-700 transition"
-      >
-        GitHub
-      </a>
+      <p class="about-body reveal">
+        That's still what I like about the job. Frontend work gives you
+        instant, honest feedback: either the layout holds up at 375px or
+        it doesn't, either the table stays fast at ten thousand rows or it
+        chugs. I've spent the last four years getting comfortable with
+        that kind of feedback, mostly on products where the interface
+        has to carry a lot of information without confusing anyone —
+        dashboards, storefronts, internal tools.
+      </p>
 
-      <!-- LinkedIn -->
-      <a
-        href="https://www.linkedin.com/in/sneha-kulhari"
-        target="_blank"
-        class="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-      >
-        LinkedIn
-    </a>
+      <p class="about-body reveal">
+        I care more about the boring parts than I probably should — load
+        states, error messages, what happens when a list is empty, what
+        happens when someone's internet is bad. Most of what separates a
+        good product from a great one lives in those unglamorous
+        corners, and most teams don't have time to get to them. I do.
+      </p>
+
+      <p class="about-body reveal">
+        Outside of work I'm usually reading about type design, taking
+        apart other people's CSS to see how they solved something, or
+        losing an evening to a side project that will never ship. I'm
+        based in Punjab, India, and work with teams across time zones —
+        mornings for calls, the rest of the day for heads-down building.
+      </p>
+
+      <div class="about-facts reveal">
+        <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">React · Vue · TypeScript · Design systems</span></div>
+        <div class="fact"><span class="fact-label">Also comfortable with</span><span class="fact-value">Accessibility audits · Performance tuning · Motion</span></div>
+        <div class="fact"><span class="fact-label">Currently</span><span class="fact-value">Open to freelance and full-time roles</span></div>
+      </div>
     </div>
   </div>
 </section>
 
-    </main>
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="eyebrow eyebrow-light reveal">Contact</p>
+    <h2 class="contact-headline reveal">Have something worth<br>building? <em>Let's talk.</em></h2>
 
-    <footer class="py-4 bg-black text-center text-white">
-        <p>© 2025 Sneha. All rights reserved.<p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <a href="mailto:hello@alexrivera.dev" class="contact-email reveal">hello@alexrivera.dev</a>
+
+    <p class="contact-note reveal">
+      I usually reply within a day. If it's a freelance project, tell me
+      roughly what you're building and your timeline — it helps me give
+      you a real answer instead of a form response.
+    </p>
+
+    <div class="contact-links reveal">
+      <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="#" target="_blank" rel="noopener">Resume (PDF) ↗</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alex Rivera. Built with HTML, CSS, and vanilla JS — no framework, on purpose.</p>
+    <a href="#top" class="footer-top">Back to top ↑</a>
+  </footer>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
