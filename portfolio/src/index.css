@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #14171F;
+  --color-ink-soft: #1D212C;
+  --color-paper: #F7F5EF;
+  --color-paper-dim: #EFEBE1;
+  --color-slate: #5B6472;
+  --color-slate-light: #8991A0;
+  --color-brass: #C9A15A;
+  --color-brass-soft: rgba(201, 161, 90, 0.18);
+  --color-moss: #4F9C7C;
+  --color-rust: #C46A4E;
+  --color-line: #DDD8CC;
+  --color-line-on-ink: rgba(247, 245, 239, 0.14);
+  --color-paper-70: rgba(247, 245, 239, 0.7);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", monospace;
+
+  --max-width-container: 1180px;
+
+  --ease-editorial: cubic-bezier(.16, .84, .44, 1);
+
+  --animate-scrollline: scrollline 2.2s ease-in-out infinite;
+}
+
+@keyframes scrollline {
+  0% { left: -100%; }
+  50% { left: 0; }
+  100% { left: 100%; }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+  em {
+    @apply not-italic italic text-brass;
+  }
+  ::selection {
+    @apply bg-brass text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
