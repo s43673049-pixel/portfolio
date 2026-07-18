@@ -5,7 +5,7 @@ function LevelDots({ level }) {
   return (
     <span className="inline-flex gap-1 shrink-0" aria-label={`Proficiency: ${level} of 3`}>
       {[1, 2, 3].map((i) => (
-        <span key={i} className={`w-1.5 h-1.5 rounded-full ${i <= level ? 'bg-brass' : 'bg-line'}`} />
+      <span key={i} className={`w-1.5 h-1.5 rounded-full ${i <= level ? 'bg-brass' : 'bg-line'}`} />
       ))}
     </span>
   );
@@ -13,18 +13,11 @@ function LevelDots({ level }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-paper py-20 sm:py-28 lg:py-[140px]">
-      <div className="max-w-container mx-auto px-5 sm:px-8">
-        <Reveal as="p" className="font-mono text-[0.78rem] tracking-wide text-rust uppercase mb-4">
-          Toolkit
+    <section id="skills" className="bg-paper py-20 sm:py-28 lg:py-[140px]"> <div className="max-w-container mx-auto px-5 sm:px-8">
+        <Reveal as="p" className="font-display font-normal text-[2rem] tracking-wide text-rust uppercase mb-4">
+          Skills
         </Reveal>
-        <Reveal
-          as="h2"
-          delay={50}
-          className="font-display font-normal leading-tight text-[2rem] sm:text-[2.6rem] lg:text-[3rem] mb-16 max-w-[18ch]"
-        >
-          What I actually reach for.
-        </Reveal>
+      
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {skillGroups.map((group, gi) => (

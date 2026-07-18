@@ -1,14 +1,18 @@
 import Reveal from './Reveal';
 
 const INDEX_ITEMS = [
-  { href: '#project-01', num: '01', name: 'Meridian — SaaS Dashboard', tag: 'Product analytics' },
-  { href: '#project-02', num: '02', name: 'Fielding — Commerce Frontend', tag: 'D2C retail' },
-  { href: '#project-03', num: '03', name: 'Portside — Admin Panel', tag: 'Internal tooling' },
+  { href: '#project-01', num: '01', name: 'Task Manager', tag: 'Productivity App' },
+  { href: '#project-02', num: '02', name: 'Expense Tracker', tag: 'Personal Finance' },
+  { href: '#project-03', num: '03', name: 'Weather App', tag: 'Weather Dashboard' },
+  { href: '#project-04', num: '04', name: 'Blood Donation System', tag: 'Healthcare Platform' },
+  { href: '#project-05', num: '05', name: 'Survey Form', tag: 'Responsive Form' },
+  { href: '#project-06', num: '06', name: 'Library Management System', tag: 'Library Management' },
 ];
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-ink text-paper pt-[120px] sm:pt-[168px] pb-16 sm:pb-24">
+
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -16,9 +20,11 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-container mx-auto px-5 sm:px-8">
-        <Reveal as="p" delay={50} className="font-mono text-[0.8rem] tracking-wide text-brass mb-7">
-          Issue No. 04 — Frontend Engineer, based in Punjab, India, working worldwide
+      <div className="relative z-10 max-w-container mx-auto px-5 sm:px-8 row-span-1">
+
+        <Reveal as="p" delay={50} className="font-mono text-[1.25rem] tracking-wide text-brass mb-7">
+          Hi, I’m <strong className="font-medium">Sneha</strong> 
+          <p>Frontend Developer | MERN Stack Developer </p>
         </Reveal>
 
         <Reveal
@@ -34,11 +40,10 @@ export default function Hero() {
         </Reveal>
 
         <Reveal as="p" delay={180} className="text-paper-70 max-w-[46ch] mt-7 text-[1.02rem] sm:text-[1.2rem]">
-          Four years turning dense dashboards, storefronts, and admin
-          tools into products people actually enjoy using. Currently taking
-          on select freelance work and full-time conversations.
+         Focus on building responsive and user-friendly web applications using React, Node.js, Express, and MySQL. Passionate about creating seamless user experiences and writing clean, maintainable code.
         </Reveal>
 
+{/* buttons */}
         <Reveal as="div" delay={250} className="flex gap-4 mt-10 flex-wrap">
           <a
             href="#work"
@@ -53,12 +58,15 @@ export default function Hero() {
             Get in touch
           </a>
         </Reveal>
+
       </div>
 
+
+{/* project index */}
       <Reveal
         as="div"
         delay={300}
-        className="relative z-10 max-w-container mx-auto px-5 sm:px-8 mt-16 sm:mt-24 border-t border-line-on-ink pt-7"
+        className="relative z-10 max-w-container mx-auto px-5 sm:px-8 mt-16 sm:mt-24 border-t border-line-on-ink pt-7 "
         aria-label="Featured projects index"
       >
         <p className="font-mono text-[0.72rem] text-slate-light tracking-[0.08em] uppercase mb-3.5">On this page</p>

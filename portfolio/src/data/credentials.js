@@ -1,9 +1,9 @@
 export const education = [
   {
     degree: 'B.Tech, Computer Science',
-    institution: 'Punjab Technical University',
-    period: '2018 — 2022',
-    note: 'Electives in HCI and web systems; final-year project on real-time data visualization for small-business dashboards.',
+    institution: 'technical University',
+    period: '2023 — 2027',
+    note: 'Currently pursuing a Bachelor of Technology in Computer Science, focusing on software development and web technologies.',
   },
 ];
 

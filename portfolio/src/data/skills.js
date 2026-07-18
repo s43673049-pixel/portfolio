@@ -1,38 +1,37 @@
 export const skillGroups = [
   {
-    category: 'Core',
+    category: 'Frontend',
     items: [
+      { name: 'HTML', level: 3 },
+      { name: 'CSS', level: 3 },
+      { name: 'JavaScript', level: 3 },
       { name: 'React', level: 3 },
-      { name: 'TypeScript', level: 3 },
-      { name: 'Next.js', level: 3 },
-      { name: 'Vue 3', level: 2 },
+      { name: 'Tailwind CSS', level: 2 },
     ],
   },
   {
-    category: 'Styling & motion',
+    category: 'Backend',
     items: [
-      { name: 'Tailwind CSS', level: 3 },
-      { name: 'CSS / Sass', level: 3 },
-      { name: 'Design tokens & systems', level: 3 },
-      { name: 'Framer Motion', level: 2 },
+      { name: 'Node.js', level: 3 },
+      { name: 'Express.js', level: 3 },
+      { name: 'REST API', level: 2 },
     ],
   },
   {
-    category: 'Data & state',
+    category: 'Database',
     items: [
-      { name: 'Zustand / Pinia', level: 3 },
-      { name: 'REST & WebSockets', level: 2 },
-      { name: 'D3.js', level: 2 },
-      { name: 'GraphQL', level: 2 },
+      { name: 'MySQL', level: 3 },
+      { name: 'Firebase', level: 2 },
+      { name: 'Firestore', level: 2 },
     ],
   },
   {
-    category: 'Tooling & testing',
+    category: 'Tools',
     items: [
-      { name: 'Vite', level: 3 },
-      { name: 'Git & CI/CD', level: 3 },
-      { name: 'Storybook', level: 2 },
-      { name: 'Playwright / Vitest', level: 2 },
+      { name: 'Git', level: 3 },
+      { name: 'GitHub', level: 3 },
+      { name: 'VS Code', level: 2 },
+      { name: 'npm', level: 2 },
     ],
   },
 ];

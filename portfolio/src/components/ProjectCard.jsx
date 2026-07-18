@@ -39,14 +39,14 @@ export default function ProjectCard({ project, isLast }) {
           ))}
         </Reveal>
 
-        <Reveal as="div" delay={250} className="flex gap-6 sm:gap-10 mb-8 pt-6 border-t border-line flex-wrap">
+        {/* <Reveal as="div" delay={250} className="flex gap-6 sm:gap-10 mb-8 pt-6 border-t border-line flex-wrap">
           {metrics.map((m) => (
             <div key={m.label} className="flex flex-col gap-1">
               <span className="font-display font-semibold text-[1.8rem] text-ink">{m.value}</span>
               <span className="font-mono text-[0.68rem] text-slate max-w-[14ch]">{m.label}</span>
             </div>
           ))}
-        </Reveal>
+        </Reveal> */}
 
         <Reveal as="div" delay={300} className="flex gap-7">
           {links.map((link) => (

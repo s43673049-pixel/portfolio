@@ -14,24 +14,22 @@ export default function Contact() {
           delay={50}
           className="font-display font-normal leading-[1.08] text-[2.2rem] sm:text-[3rem] lg:text-[3.8rem] mb-10"
         >
-          Have something worth
+           Let's build something
           <br />
-          building? <em className="font-normal">Let's talk.</em>
+           <em className="font-normal">great together.</em>
         </Reveal>
 
         <Reveal as="div" delay={100}>
           <a
-            href="mailto:hello@alexrivera.dev"
+            href="mailto:s43673049@gmail.com"
             className="inline-block font-display italic text-[1.5rem] sm:text-[2rem] lg:text-[2.4rem] text-brass border-b border-brass-soft pb-1.5 mb-8 transition-opacity duration-300 hover:opacity-75"
           >
-            hello@alexrivera.dev
+            snehakulhari.dev
           </a>
         </Reveal>
 
         <Reveal as="p" delay={150} className="text-paper-70 max-w-[52ch] mb-10">
-          I usually reply within a day. If it's a freelance project, tell me
-          roughly what you're building and your timeline — it helps me give
-          you a real answer instead of a form response.
+        I'm currently seeking internship opportunities and entry-level software development roles where I can contribute to real-world products while continuing to learn and grow. If you'd like to discuss a project, collaboration, or potential opportunity, I'd be happy to hear from you.
         </Reveal>
 
         <Reveal
@@ -53,7 +51,7 @@ export default function Contact() {
 
       <footer className="max-w-container mx-auto px-5 sm:px-8 py-6 sm:py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
         <p className="font-mono text-[0.72rem] text-slate-light">
-          © {year} Alex Rivera. Built with React, Tailwind, and vanilla hooks — no bloat, on purpose.
+          © {year} Sneha Kulhari. Built with React, Tailwind CSS, and a focus on accessibility, performance, and clean user experiences.
         </p>
         <a href="#top" className="font-mono text-[0.72rem] text-paper-70 hover:text-brass transition-colors duration-300">
           Back to top ↑

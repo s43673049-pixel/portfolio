@@ -1,41 +1,47 @@
 export const projects = [
   {
     id: 'project-01',
-    eyebrow: 'Case study — 01 · SaaS Dashboard',
-    title: 'Meridian',
-    tagline: "Turning a spreadsheet-shaped product into something a team could actually read in a morning stand-up.",
+    eyebrow: 'Case study — 01 · Full-Stack Web Application',
+    title: 'Library Management System',
+    tagline: "Designed and developed a complete library management platform to simplify book tracking, member management, and borrowing operations.",
     paragraphs: [
-      "Meridian's analytics suite had grown organically for three years — every new metric got bolted onto an already-crowded table. My job was to rebuild the dashboard layer: a component system flexible enough for a hundred metric types, but opinionated enough that no two screens looked like they'd been designed by different teams.",
-      'I built a composable widget grid, a chart library wrapper on top of D3 with consistent motion and empty states, and a virtualized table that stayed smooth past 50,000 rows on mid-range laptops.',
+      "The project replaces manual record keeping with a centralized web application where administrators can manage books, members, and borrowing history from a single dashboard. The primary goal was to improve data organization while reducing repetitive administrative tasks.",
+
+      "I built a responsive React frontend connected to a Node.js and Express backend with a MySQL database. The application supports authentication, CRUD operations, search functionality, and a structured dashboard while following reusable component architecture."
     ],
-    tags: ['React', 'TypeScript', 'D3.js', 'Zustand', 'Vite'],
-    metrics: [
-      { value: '−61%', label: 'dashboard load time' },
-      { value: '50k+', label: 'rows rendered smoothly' },
-      { value: '96', label: 'Lighthouse performance' },
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "REST API",
+      "CSS"
     ],
     links: [
       { label: 'Live demo', href: '#' },
       { label: 'View code', href: '#' },
     ],
-    url: 'meridian.app/dashboard/overview',
+    url: 'library-management-system.app/dashboard/overview',
     mockup: 'dashboard',
     reverse: false,
   },
   {
     id: 'project-02',
-    eyebrow: 'Case study — 02 · Commerce Frontend',
-    title: 'Fielding',
-    tagline: "A D2C outdoor-gear brand whose checkout was quietly losing them a third of their traffic.",
-    paragraphs: [
-      "Fielding came to me with a fast, pretty homepage and a checkout flow that fell apart on mobile. I rebuilt the storefront front end from product listing to payment confirmation, focused on perceived speed — optimistic UI on add-to-cart, skeleton states instead of spinners, and a checkout that never made the customer wait for a network round trip to feel progress.",
-      "Images were the biggest lever: adaptive formats, lazy loading tuned to scroll velocity, and a custom zoom component that didn't tank Core Web Vitals.",
+    eyebrow: 'Case study — 02 · Healthcare Platform',
+    title: 'Blood Donation System',
+    tagline: "Connecting blood donors and recipients through a secure and responsive web application.",
+    paragraphs:[
+      "Finding compatible blood donors quickly can be difficult during emergencies. This application helps users register as donors, search by blood group, and submit blood requests through an easy-to-use interface.",
+
+      "Firebase Authentication and Firestore were used to manage users and real-time data. Special attention was given to Firestore security rules, responsive layouts, and organizing donor information efficiently."
     ],
-    tags: ['Next.js', 'Tailwind CSS', 'Stripe', 'Shopify API', 'Framer Motion'],
-    metrics: [
-      { value: '+34%', label: 'checkout completion' },
-      { value: '1.2s', label: 'largest contentful paint' },
-      { value: '−28%', label: 'mobile bounce rate' },
+
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Firebase",
+      "Firestore"
     ],
     links: [
       { label: 'Live demo', href: '#' },
@@ -47,19 +53,18 @@ export const projects = [
   },
   {
     id: 'project-03',
-    eyebrow: 'Case study — 03 · Admin Panel',
-    title: 'Portside',
-    tagline: "Internal tooling for a logistics team who'd been running warehouse ops out of a shared spreadsheet.",
+    eyebrow: 'Case study — 03 · Frontend Development',
+    title: 'Survey Form',
+    tagline: "Building an accessible and responsive survey experience using semantic HTML and modern CSS.",
     paragraphs: [
-      'Portside is the least glamorous project here and probably the one I\'m proudest of. No one "wows" over an admin panel, but a warehouse team uses this thing eight hours a day — so every interaction had to be fast, keyboard-friendly, and forgiving of mistakes. Bulk actions, inline editing, undo everywhere, and a permission system that stayed out of people\'s way until it mattered.',
-      "I built the whole thing around a shared design token system so the client's next three internal tools could be styled from the same base without starting over.",
+      "The objective of this project was to create a clean and accessible form interface that works consistently across desktop and mobile devices while following HTML best practices.",
+
+      "The project focuses on responsive layouts, client-side validation, semantic markup, and usability improvements, providing a strong foundation for larger frontend applications."
     ],
-    tags: ['Vue 3', 'TypeScript', 'Pinia', 'REST + WebSockets', 'Storybook'],
-    metrics: [
-      { value: '6.5hrs', label: 'saved per week, per user' },
-      { value: '140+', label: 'daily active operators' },
-      { value: '0', label: 'spreadsheets left in prod' },
-    ],
+    tags: [
+      "HTML5",
+      "CSS3",
+      "JavaScript"],
     links: [
       { label: 'Case study', href: '#' },
       { label: 'View code', href: '#' },
